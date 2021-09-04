@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>WELCOME</title>
+    <script>
+      let a;
+      let date;
+      let time;
+      setInterval(()=> {
+      a=new Date();
+      date =a.toLocaleDateString();
+      time =a.getHours()+":"+a.getMinutes()+":"+ a.getSeconds();
+      document.getElementById('time').innerHTML=time + " on " +date;
+      },1000);
+      </script>
+  </head>
+  <body background="aamir.jpg  ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">TIME</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href=>Home</a>
+              
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
+
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+  Button with data-bs-target
+</button>
+
+
+
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">more</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div>  hii this is a website for time (updated)
+    </div>
+    <div class="dropdown mt-5">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
+        UPDATE
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" href="#">play game</a></f>
+        <li><a class="dropdown-item" href="#">watch the calander</a></li>
+        <li><a class="dropdown-item" href="#">info..</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container my-4">
+  <div class="jumbotron">
+    <h1 class= "display-4 ">current time is :<span id="time"></span></h1>
+    <p class ="lead">This is a basically a time based website ,which will show you a updated time </p>
+    
+    <p class ="hat">Do you wants to open the calender ,which will show you a event reated to the dates</p>
+    <button  button type ="button" class ="hyper"  >click </button>
+    <hr class ="my-4">
+    <p> Here you can browse time.</p>
+    
+
+
+<p>
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+Browse Here
+  </a>
+ 
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    The country time is loading...
+  </div>
+</div>
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+
+
+.fa-facebook {
+  background: #0ce030;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: rgba(102, 255, 0, 0.521);
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #12564643;
+  color: white;
+}
+
+.fa-github {
+  background: #ff6600;
+  color: white;
+  font size: 5px;;
+}
+
+</style>
+</head>
+<body>
+
+<h2>Follow me at Social Media platform</h2>
+
+<!-- Add font awesome icons -->
+<a href="https://www.facebook.com/profile.php?id=100037487573101" class="fa fa-facebook"></a>
+<a href=" https://twitter.com/AamirKh35041329?s=08" class="fa fa-twitter"></a>
+<a href="" class="fa fa-google"></a>
+<a href="https://www.linkedin.com/in/aamir-khan-341662214" class="fa fa-linkedin"></a>
+<a href="https://youtube.com/channel/UCW1CXN8pLNV7xBTAR5BY0bA" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com/its_aamir_pb11?r=nametag" class="fa fa-instagram"></a>
+<a href="https://github.com/" class="fa fa-github"></a>
+      
+</body>
+</html> 
